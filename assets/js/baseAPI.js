@@ -4,7 +4,7 @@
 // 请求拦截器 可以在这个函数中，对请求参数进行处理
 $.ajaxPrefilter((options) => {
     // 在请求之前拼接上根路径
-    options.url = 'http://www.liulongbin.top:3007' + options.url
+    options.url = 'http://big-event-api-t.itheima.net' + options.url
     // 注入token
     if(options.url.includes('/my/')) {
         options.headers={
